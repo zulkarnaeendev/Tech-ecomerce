@@ -18,24 +18,26 @@ import Wishlist from './page/Wishlist';
 import { ToastContainer } from 'react-toastify';
 
 
-const Router = createBrowserRouter([
-  {
-    path: "/",
-    Component: RootLayout,
-    children: [
-      { index: true, Component: Home },
-      { path: "shop", Component: Shop },
-      { path: "Productdetail/:id", Component: ProductDetail },
-      { path: "cart", Component: Cart},
-      { path: "wishlist", Component: Wishlist},
-      { path: "contact", Component: Contact },
-      { path: "about", Component: About },
-      { path: "signup", Component: SignUp },
-      { path: "login", Component: Login },
+const Router = createHashRouter(
+  [
+    {
+      path: "/",
+      Component: RootLayout,
+      children: [
+        { index: true, Component: Home },
+        { path: "shop", Component: Shop },
+        { path: "Productdetail/:id", Component: ProductDetail },
+        { path: "cart", Component: Cart },
+        { path: "wishlist", Component: Wishlist },
+        { path: "contact", Component: Contact },
+        { path: "about", Component: About },
+        { path: "signup", Component: SignUp },
+        { path: "login", Component: Login },
+      ],
+    },
+  ],
+);
 
-    ],
-  },
-]);
 
 
 createRoot(document.getElementById('root')).render(
