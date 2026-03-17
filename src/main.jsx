@@ -1,6 +1,5 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import RootLayout from './components/RootLayout';
 import { Provider } from 'react-redux'
@@ -16,6 +15,7 @@ import { store } from './Store';
 import ProductDetail from './page/ProductDetail';
 import Wishlist from './page/Wishlist';
 import { ToastContainer } from 'react-toastify';
+import { createHashRouter } from 'react-router';
 
 
 const Router = createHashRouter(
