@@ -15,7 +15,7 @@ import { store } from './Store';
 import ProductDetail from './page/ProductDetail';
 import Wishlist from './page/Wishlist';
 import { ToastContainer } from 'react-toastify';
-import { createHashRouter } from 'react-router';
+import { createHashRouter } from 'react-router-dom';
 
 
 const Router = createHashRouter(
