@@ -29,7 +29,7 @@ const LimitedExperience = () => {
           </h2>
         </div>
         <div className="flex mt-8 gap-6 mb-10">
-          {/* Repeat this structure for Days, Hours, Minutes, Seconds */}
+          
           <div className="flex flex-col items-center justify-center w-15.5 h-15.5 bg-white rounded-full text-black">
             <h2 className="font-semibold text-[16px] leading-tight">
               {count.days}
@@ -55,6 +55,7 @@ const LimitedExperience = () => {
             <h2 className="font-semibold text-[16px] leading-tight">
               {count.seconds}
             </h2>
+            
             <h4 className="font-normal text-[11px] leading-none">Seconds</h4>
           </div>
         </div>
