@@ -16,6 +16,7 @@ import ProductDetail from './page/ProductDetail';
 import Wishlist from './page/Wishlist';
 import { ToastContainer } from 'react-toastify';
 import { createHashRouter } from 'react-router-dom';
+import NotFoundPage from './page/NotFoundPage';
 
 
 const Router = createHashRouter(
@@ -33,6 +34,7 @@ const Router = createHashRouter(
         { path: "about", Component: About },
         { path: "signup", Component: SignUp },
         { path: "login", Component: Login },
+        { path: "*", Component: NotFoundPage},
       ],
     },
   ],
